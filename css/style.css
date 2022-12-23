@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(204, 204, 170);
+}
+.container{
+    margin: 0 auto;
+    width: 70%;
+    background-color: white;
+}
+.content {
+    float: left;
+    width: 74.99%;
+    padding: 20px;
+}
+.fejlec {
+    background: url(../img/logo.jpg);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    padding-left: 200px;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.navbar {
+    width: 24.99%;
+    float: left;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    background-color:rgb(204, 102, 0) ;
+    color: white;
+    padding: 20px;
+    border-bottom: 1px solid white;
+}
+.navbar ul li:first-child {
+    border-top:1px solid white ;
+}
+.column{
+    margin-right: 40px;
+}
+.column h2 {
+    background-color:rgb(170, 170, 136) ;
+    color: white;
+}
+.column p {
+    text-align: justify;
+    line-height: 1.5rem;
+    padding: 10px;
+}
+.column:last-child h2{
+    margin-top: 10px;
+}
+.first {
+    float: right;
+    padding: 20px;
+    padding-right: 0;
+}
+.last{
+    float: left;
+    padding:20px;
+    padding-left: 0;
+    padding-top: 0;
+}
+.footer {
+    overflow: hidden;
+    background-color:rgb(241, 217, 119) ;
+    height: 70px;
+    color: rgb(228, 163, 37);
+    text-align: center;
+    width: 100%;
+}
+.content::after, .navbar::after, .first, .last {
+    clear: both;
+    display: table;
+    content: "";
+}
